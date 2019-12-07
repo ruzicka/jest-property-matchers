@@ -1,0 +1,38 @@
+{
+  "name": "jest-property-matchers",
+  "version": "0.1.0",
+  "description": "Simplifies creation of your jest property matchers",
+  "main": "index.js",
+  "scripts": {},
+  "author": "David Ruzicka",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruzicka/jest-property-matchers.git"
+  },
+  "keywords": [
+    "jest",
+    "property",
+    "matcher",
+    "property-matcher",
+    "snapshots",
+    "test"
+  ],
+  "bugs": {
+    "url": "https://github.com/ruzicka/preserve-case-replace/issues"
+  },
+  "homepage": "https://github.com/ruzicka/preserve-case-replace#readme",
+  "jest": {
+    "moduleFileExtensions": [
+      "js"
+    ]
+  },
+  "devDependencies": {
+    "chance": "^1.1.4",
+    "jest": "^24.9.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {}
+}

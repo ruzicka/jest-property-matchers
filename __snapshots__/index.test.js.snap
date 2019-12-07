@@ -1,0 +1,305 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matchers $date multiple random properties and some other constant props 1`] = `
+Object {
+  "createdAt": Any<Date>,
+  "created_at": Any<Date>,
+  "num": 10,
+  "str": "test string",
+}
+`;
+
+exports[`matchers $date multiple random properties only 1`] = `
+Object {
+  "createdAt": Any<Date>,
+  "created_at": Any<Date>,
+}
+`;
+
+exports[`matchers $date single random property (defined in array) and some other constant props 1`] = `
+Object {
+  "createdAt": Any<Date>,
+  "num": 10,
+  "str": "test string",
+}
+`;
+
+exports[`matchers $date single random property (defined in array) only 1`] = `
+Object {
+  "createdAt": Any<Date>,
+}
+`;
+
+exports[`matchers $date single random property and some other constant props 1`] = `
+Object {
+  "createdAt": Any<Date>,
+  "num": 10,
+  "str": "test string",
+}
+`;
+
+exports[`matchers $date single random property only 1`] = `
+Object {
+  "createdAt": Any<Date>,
+}
+`;
+
+exports[`matchers $dateTime multiple random properties and some other constant props 1`] = `
+Object {
+  "createdAt": Any<Date>,
+  "created_at": Any<Date>,
+  "num": 10,
+  "str": "test string",
+}
+`;
+
+exports[`matchers $dateTime multiple random properties only 1`] = `
+Object {
+  "createdAt": Any<Date>,
+  "created_at": Any<Date>,
+}
+`;
+
+exports[`matchers $dateTime single random property (defined in array) and some other constant props 1`] = `
+Object {
+  "createdAt": Any<Date>,
+  "num": 10,
+  "str": "test string",
+}
+`;
+
+exports[`matchers $dateTime single random property (defined in array) only 1`] = `
+Object {
+  "createdAt": Any<Date>,
+}
+`;
+
+exports[`matchers $dateTime single random property and some other constant props 1`] = `
+Object {
+  "createdAt": Any<Date>,
+  "num": 10,
+  "str": "test string",
+}
+`;
+
+exports[`matchers $dateTime single random property only 1`] = `
+Object {
+  "createdAt": Any<Date>,
+}
+`;
+
+exports[`matchers $number multiple random properties and some other constant props 1`] = `
+Object {
+  "_id": Any<Number>,
+  "id": Any<Number>,
+  "num": 10,
+  "str": "test string",
+}
+`;
+
+exports[`matchers $number multiple random properties only 1`] = `
+Object {
+  "_id": Any<Number>,
+  "id": Any<Number>,
+}
+`;
+
+exports[`matchers $number single random property (defined in array) and some other constant props 1`] = `
+Object {
+  "id": Any<Number>,
+  "num": 10,
+  "str": "test string",
+}
+`;
+
+exports[`matchers $number single random property (defined in array) only 1`] = `
+Object {
+  "id": Any<Number>,
+}
+`;
+
+exports[`matchers $number single random property and some other constant props 1`] = `
+Object {
+  "id": Any<Number>,
+  "num": 10,
+  "str": "test string",
+}
+`;
+
+exports[`matchers $number single random property only 1`] = `
+Object {
+  "id": Any<Number>,
+}
+`;
+
+exports[`matchers $numericString multiple random properties and some other constant props 1`] = `
+Object {
+  "_id": StringMatching /\\[0-9\\]\\+/u,
+  "id": StringMatching /\\[0-9\\]\\+/u,
+  "num": 10,
+  "str": "test string",
+}
+`;
+
+exports[`matchers $numericString multiple random properties only 1`] = `
+Object {
+  "_id": StringMatching /\\[0-9\\]\\+/u,
+  "id": StringMatching /\\[0-9\\]\\+/u,
+}
+`;
+
+exports[`matchers $numericString single random property (defined in array) and some other constant props 1`] = `
+Object {
+  "id": StringMatching /\\[0-9\\]\\+/u,
+  "num": 10,
+  "str": "test string",
+}
+`;
+
+exports[`matchers $numericString single random property (defined in array) only 1`] = `
+Object {
+  "id": StringMatching /\\[0-9\\]\\+/u,
+}
+`;
+
+exports[`matchers $numericString single random property and some other constant props 1`] = `
+Object {
+  "id": StringMatching /\\[0-9\\]\\+/u,
+  "num": 10,
+  "str": "test string",
+}
+`;
+
+exports[`matchers $numericString single random property only 1`] = `
+Object {
+  "id": StringMatching /\\[0-9\\]\\+/u,
+}
+`;
+
+exports[`matchers $stringDate multiple random properties and some other constant props 1`] = `
+Object {
+  "createdAt": StringMatching /\\^\\\\d\\{4\\}-\\[01\\]\\\\d-\\[0-3\\]\\\\d\\$/u,
+  "created_at": StringMatching /\\^\\\\d\\{4\\}-\\[01\\]\\\\d-\\[0-3\\]\\\\d\\$/u,
+  "num": 10,
+  "str": "test string",
+}
+`;
+
+exports[`matchers $stringDate multiple random properties only 1`] = `
+Object {
+  "createdAt": StringMatching /\\^\\\\d\\{4\\}-\\[01\\]\\\\d-\\[0-3\\]\\\\d\\$/u,
+  "created_at": StringMatching /\\^\\\\d\\{4\\}-\\[01\\]\\\\d-\\[0-3\\]\\\\d\\$/u,
+}
+`;
+
+exports[`matchers $stringDate single random property (defined in array) and some other constant props 1`] = `
+Object {
+  "createdAt": StringMatching /\\^\\\\d\\{4\\}-\\[01\\]\\\\d-\\[0-3\\]\\\\d\\$/u,
+  "num": 10,
+  "str": "test string",
+}
+`;
+
+exports[`matchers $stringDate single random property (defined in array) only 1`] = `
+Object {
+  "createdAt": StringMatching /\\^\\\\d\\{4\\}-\\[01\\]\\\\d-\\[0-3\\]\\\\d\\$/u,
+}
+`;
+
+exports[`matchers $stringDate single random property and some other constant props 1`] = `
+Object {
+  "createdAt": StringMatching /\\^\\\\d\\{4\\}-\\[01\\]\\\\d-\\[0-3\\]\\\\d\\$/u,
+  "num": 10,
+  "str": "test string",
+}
+`;
+
+exports[`matchers $stringDate single random property only 1`] = `
+Object {
+  "createdAt": StringMatching /\\^\\\\d\\{4\\}-\\[01\\]\\\\d-\\[0-3\\]\\\\d\\$/u,
+}
+`;
+
+exports[`matchers $stringDateTime multiple random properties and some other constant props 1`] = `
+Object {
+  "createdAt": StringMatching /\\^\\\\d\\{4\\}-\\[01\\]\\\\d-\\[0-3\\]\\\\dT\\[0-2\\]\\\\d:\\[0-5\\]\\\\d:\\[0-5\\]\\\\d\\\\\\.\\\\d\\+\\(\\[\\+-\\]\\[0-2\\]\\\\d:\\[0-5\\]\\\\d\\|Z\\)\\$/u,
+  "created_at": StringMatching /\\^\\\\d\\{4\\}-\\[01\\]\\\\d-\\[0-3\\]\\\\dT\\[0-2\\]\\\\d:\\[0-5\\]\\\\d:\\[0-5\\]\\\\d\\\\\\.\\\\d\\+\\(\\[\\+-\\]\\[0-2\\]\\\\d:\\[0-5\\]\\\\d\\|Z\\)\\$/u,
+  "num": 10,
+  "str": "test string",
+}
+`;
+
+exports[`matchers $stringDateTime multiple random properties only 1`] = `
+Object {
+  "createdAt": StringMatching /\\^\\\\d\\{4\\}-\\[01\\]\\\\d-\\[0-3\\]\\\\dT\\[0-2\\]\\\\d:\\[0-5\\]\\\\d:\\[0-5\\]\\\\d\\\\\\.\\\\d\\+\\(\\[\\+-\\]\\[0-2\\]\\\\d:\\[0-5\\]\\\\d\\|Z\\)\\$/u,
+  "created_at": StringMatching /\\^\\\\d\\{4\\}-\\[01\\]\\\\d-\\[0-3\\]\\\\dT\\[0-2\\]\\\\d:\\[0-5\\]\\\\d:\\[0-5\\]\\\\d\\\\\\.\\\\d\\+\\(\\[\\+-\\]\\[0-2\\]\\\\d:\\[0-5\\]\\\\d\\|Z\\)\\$/u,
+}
+`;
+
+exports[`matchers $stringDateTime single random property (defined in array) and some other constant props 1`] = `
+Object {
+  "createdAt": StringMatching /\\^\\\\d\\{4\\}-\\[01\\]\\\\d-\\[0-3\\]\\\\dT\\[0-2\\]\\\\d:\\[0-5\\]\\\\d:\\[0-5\\]\\\\d\\\\\\.\\\\d\\+\\(\\[\\+-\\]\\[0-2\\]\\\\d:\\[0-5\\]\\\\d\\|Z\\)\\$/u,
+  "num": 10,
+  "str": "test string",
+}
+`;
+
+exports[`matchers $stringDateTime single random property (defined in array) only 1`] = `
+Object {
+  "createdAt": StringMatching /\\^\\\\d\\{4\\}-\\[01\\]\\\\d-\\[0-3\\]\\\\dT\\[0-2\\]\\\\d:\\[0-5\\]\\\\d:\\[0-5\\]\\\\d\\\\\\.\\\\d\\+\\(\\[\\+-\\]\\[0-2\\]\\\\d:\\[0-5\\]\\\\d\\|Z\\)\\$/u,
+}
+`;
+
+exports[`matchers $stringDateTime single random property and some other constant props 1`] = `
+Object {
+  "createdAt": StringMatching /\\^\\\\d\\{4\\}-\\[01\\]\\\\d-\\[0-3\\]\\\\dT\\[0-2\\]\\\\d:\\[0-5\\]\\\\d:\\[0-5\\]\\\\d\\\\\\.\\\\d\\+\\(\\[\\+-\\]\\[0-2\\]\\\\d:\\[0-5\\]\\\\d\\|Z\\)\\$/u,
+  "num": 10,
+  "str": "test string",
+}
+`;
+
+exports[`matchers $stringDateTime single random property only 1`] = `
+Object {
+  "createdAt": StringMatching /\\^\\\\d\\{4\\}-\\[01\\]\\\\d-\\[0-3\\]\\\\dT\\[0-2\\]\\\\d:\\[0-5\\]\\\\d:\\[0-5\\]\\\\d\\\\\\.\\\\d\\+\\(\\[\\+-\\]\\[0-2\\]\\\\d:\\[0-5\\]\\\\d\\|Z\\)\\$/u,
+}
+`;
+
+exports[`matchers more complex scenarios combination of all supported props 1`] = `
+Object {
+  "_id": Any<Number>,
+  "bigIntId": StringMatching /\\[0-9\\]\\+/u,
+  "bornAt": Any<Date>,
+  "bornAtStr": StringMatching /\\^\\\\d\\{4\\}-\\[01\\]\\\\d-\\[0-3\\]\\\\d\\$/u,
+  "createdAt": Any<Date>,
+  "createdAtStr": StringMatching /\\^\\\\d\\{4\\}-\\[01\\]\\\\d-\\[0-3\\]\\\\dT\\[0-2\\]\\\\d:\\[0-5\\]\\\\d:\\[0-5\\]\\\\d\\\\\\.\\\\d\\+\\(\\[\\+-\\]\\[0-2\\]\\\\d:\\[0-5\\]\\\\d\\|Z\\)\\$/u,
+  "created_at": Any<Date>,
+  "created_at_str": StringMatching /\\^\\\\d\\{4\\}-\\[01\\]\\\\d-\\[0-3\\]\\\\dT\\[0-2\\]\\\\d:\\[0-5\\]\\\\d:\\[0-5\\]\\\\d\\\\\\.\\\\d\\+\\(\\[\\+-\\]\\[0-2\\]\\\\d:\\[0-5\\]\\\\d\\|Z\\)\\$/u,
+  "id": Any<Number>,
+  "otherProp": Array [
+    10,
+    20,
+  ],
+  "someOtherProp": "str value",
+}
+`;
+
+exports[`matchers more complex scenarios nested objects 1`] = `
+Object {
+  "_id": Any<Number>,
+  "bornAtStr": StringMatching /\\^\\\\d\\{4\\}-\\[01\\]\\\\d-\\[0-3\\]\\\\d\\$/u,
+  "createdAtStr": StringMatching /\\^\\\\d\\{4\\}-\\[01\\]\\\\d-\\[0-3\\]\\\\dT\\[0-2\\]\\\\d:\\[0-5\\]\\\\d:\\[0-5\\]\\\\d\\\\\\.\\\\d\\+\\(\\[\\+-\\]\\[0-2\\]\\\\d:\\[0-5\\]\\\\d\\|Z\\)\\$/u,
+  "created_at_str": StringMatching /\\^\\\\d\\{4\\}-\\[01\\]\\\\d-\\[0-3\\]\\\\dT\\[0-2\\]\\\\d:\\[0-5\\]\\\\d:\\[0-5\\]\\\\d\\\\\\.\\\\d\\+\\(\\[\\+-\\]\\[0-2\\]\\\\d:\\[0-5\\]\\\\d\\|Z\\)\\$/u,
+  "id": Any<Number>,
+  "otherProp": Array [
+    10,
+    20,
+  ],
+  "subObject": Object {
+    "bigIntId": StringMatching /\\[0-9\\]\\+/u,
+    "bornAt": Any<Date>,
+    "createdAt": Any<Date>,
+    "created_at": Any<Date>,
+    "someOtherProp": "str value",
+  },
+}
+`;

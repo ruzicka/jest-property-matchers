@@ -1,0 +1,8 @@
+node_modules/
+coverage/
+.vscode
+.env
+.nyc_output/
+temp/*
+.idea
+dist/
