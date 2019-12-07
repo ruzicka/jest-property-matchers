@@ -1,7 +1,7 @@
 'use strict'
 
-const generateMatcher = require('./index')
-const Chance = require('chance')
+import * as Chance from 'chance'
+import generateMatcher from './index'
 
 const chance = new Chance()
 
@@ -11,7 +11,7 @@ describe('matchers', () => {
 
     test('single random property (defined in array) only', async () => {
       const obj = {
-        id: chance.integer()
+        id: chance.integer(),
       }
 
       const matcher = generateMatcher({
@@ -21,10 +21,9 @@ describe('matchers', () => {
       expect(obj).toMatchSnapshot(matcher)
     })
 
-
     test('single random property only', async () => {
       const obj = {
-        id: chance.integer()
+        id: chance.integer(),
       }
 
       const matcher = generateMatcher({
@@ -33,7 +32,6 @@ describe('matchers', () => {
 
       expect(obj).toMatchSnapshot(matcher)
     })
-
 
     test('single random property (defined in array) and some other constant props', async () => {
       const obj = {
@@ -75,7 +73,6 @@ describe('matchers', () => {
 
       expect(obj).toMatchSnapshot(matcher)
     })
-
 
     test('multiple random properties and some other constant props', async () => {
       const obj = {
@@ -97,7 +94,7 @@ describe('matchers', () => {
 
     test('single random property (defined in array) only', async () => {
       const obj = {
-        id: chance.integer().toString()
+        id: chance.integer().toString(),
       }
 
       const matcher = generateMatcher({
@@ -107,10 +104,9 @@ describe('matchers', () => {
       expect(obj).toMatchSnapshot(matcher)
     })
 
-
     test('single random property only', async () => {
       const obj = {
-        id: chance.integer().toString()
+        id: chance.integer().toString(),
       }
 
       const matcher = generateMatcher({
@@ -119,7 +115,6 @@ describe('matchers', () => {
 
       expect(obj).toMatchSnapshot(matcher)
     })
-
 
     test('single random property (defined in array) and some other constant props', async () => {
       const obj = {
@@ -161,7 +156,6 @@ describe('matchers', () => {
 
       expect(obj).toMatchSnapshot(matcher)
     })
-
 
     test('multiple random properties and some other constant props', async () => {
       const obj = {
@@ -183,7 +177,7 @@ describe('matchers', () => {
 
     test('single random property (defined in array) only', async () => {
       const obj = {
-        createdAt: chance.date()
+        createdAt: chance.date(),
       }
 
       const matcher = generateMatcher({
@@ -193,10 +187,9 @@ describe('matchers', () => {
       expect(obj).toMatchSnapshot(matcher)
     })
 
-
     test('single random property only', async () => {
       const obj = {
-        createdAt: chance.date()
+        createdAt: chance.date(),
       }
 
       const matcher = generateMatcher({
@@ -206,7 +199,6 @@ describe('matchers', () => {
       expect(obj).toMatchSnapshot(matcher)
     })
 
-
     test('single random property (defined in array) and some other constant props', async () => {
       const obj = {
         createdAt: chance.date(),
@@ -248,7 +240,6 @@ describe('matchers', () => {
       expect(obj).toMatchSnapshot(matcher)
     })
 
-
     test('multiple random properties and some other constant props', async () => {
       const obj = {
         createdAt: chance.date(),
@@ -265,12 +256,11 @@ describe('matchers', () => {
     })
   })
 
-
   describe('$date', () => {
 
     test('single random property (defined in array) only', async () => {
       const obj = {
-        createdAt: chance.date()
+        createdAt: chance.date(),
       }
 
       const matcher = generateMatcher({
@@ -280,10 +270,9 @@ describe('matchers', () => {
       expect(obj).toMatchSnapshot(matcher)
     })
 
-
     test('single random property only', async () => {
       const obj = {
-        createdAt: chance.date()
+        createdAt: chance.date(),
       }
 
       const matcher = generateMatcher({
@@ -293,7 +282,6 @@ describe('matchers', () => {
       expect(obj).toMatchSnapshot(matcher)
     })
 
-
     test('single random property (defined in array) and some other constant props', async () => {
       const obj = {
         createdAt: chance.date(),
@@ -335,7 +323,6 @@ describe('matchers', () => {
       expect(obj).toMatchSnapshot(matcher)
     })
 
-
     test('multiple random properties and some other constant props', async () => {
       const obj = {
         createdAt: chance.date(),
@@ -352,12 +339,11 @@ describe('matchers', () => {
     })
   })
 
-
   describe('$stringDateTime', () => {
 
     test('single random property (defined in array) only', async () => {
       const obj = {
-        createdAt: chance.date().toISOString()
+        createdAt: chance.date().toISOString(),
       }
 
       const matcher = generateMatcher({
@@ -367,10 +353,9 @@ describe('matchers', () => {
       expect(obj).toMatchSnapshot(matcher)
     })
 
-
     test('single random property only', async () => {
       const obj = {
-        createdAt: chance.date().toISOString()
+        createdAt: chance.date().toISOString(),
       }
 
       const matcher = generateMatcher({
@@ -380,7 +365,6 @@ describe('matchers', () => {
       expect(obj).toMatchSnapshot(matcher)
     })
 
-
     test('single random property (defined in array) and some other constant props', async () => {
       const obj = {
         createdAt: chance.date().toISOString(),
@@ -422,7 +406,6 @@ describe('matchers', () => {
       expect(obj).toMatchSnapshot(matcher)
     })
 
-
     test('multiple random properties and some other constant props', async () => {
       const obj = {
         createdAt: chance.date().toISOString(),
@@ -439,13 +422,11 @@ describe('matchers', () => {
     })
   })
 
-
-
   describe('$stringDate', () => {
 
     test('single random property (defined in array) only', async () => {
       const obj = {
-        createdAt: chance.date().toISOString().substr(0, 10)
+        createdAt: chance.date().toISOString().substr(0, 10),
       }
 
       const matcher = generateMatcher({
@@ -455,10 +436,9 @@ describe('matchers', () => {
       expect(obj).toMatchSnapshot(matcher)
     })
 
-
     test('single random property only', async () => {
       const obj = {
-        createdAt: chance.date().toISOString().substr(0, 10)
+        createdAt: chance.date().toISOString().substr(0, 10),
       }
 
       const matcher = generateMatcher({
@@ -467,7 +447,6 @@ describe('matchers', () => {
 
       expect(obj).toMatchSnapshot(matcher)
     })
-
 
     test('single random property (defined in array) and some other constant props', async () => {
       const obj = {
@@ -509,7 +488,6 @@ describe('matchers', () => {
 
       expect(obj).toMatchSnapshot(matcher)
     })
-
 
     test('multiple random properties and some other constant props', async () => {
       const obj = {
@@ -550,7 +528,7 @@ describe('matchers', () => {
         $number: ['id', '_id'],
         $numericString: 'bigIntId',
         $dateTime: ['createdAt', 'created_at'],
-        $date: 'bornAt'
+        $date: 'bornAt',
       })
 
       expect(obj).toMatchSnapshot(matcher)
@@ -570,7 +548,7 @@ describe('matchers', () => {
           created_at: chance.date(),
           bornAt: chance.date(),
           someOtherProp: 'str value',
-        }
+        },
       }
 
       const matcher = generateMatcher({
@@ -580,8 +558,8 @@ describe('matchers', () => {
         subObject: {
           $numericString: 'bigIntId',
           $dateTime: ['createdAt', 'created_at'],
-          $date: 'bornAt'
-        }
+          $date: 'bornAt',
+        },
       })
 
       expect(obj).toMatchSnapshot(matcher)
