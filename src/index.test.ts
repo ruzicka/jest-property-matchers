@@ -503,6 +503,89 @@ describe('matchers', () => {
     })
   })
 
+  describe('$string', () => {
+
+    test('single random property (defined in array) only', () => {
+      const obj = {
+        stringProp: chance.word(),
+      }
+
+      const matcher = generateMatcher({
+        $string: ['stringProp'],
+      })
+
+      expect(obj).toMatchSnapshot(matcher)
+    })
+
+    test('single random property only', () => {
+      const obj = {
+        stringProp: chance.word(),
+      }
+
+      const matcher = generateMatcher({
+        $string: 'stringProp',
+      })
+
+      expect(obj).toMatchSnapshot(matcher)
+    })
+
+    test('single random property (defined in array) and some other constant props', () => {
+      const obj = {
+        stringProp: chance.word(),
+        num: 10,
+        str: 'test string',
+      }
+
+      const matcher = generateMatcher({
+        $string: ['stringProp'],
+      })
+
+      expect(obj).toMatchSnapshot(matcher)
+    })
+
+    test('single random property and some other constant props', () => {
+      const obj = {
+        stringProp: chance.word(),
+        num: 10,
+        str: 'test string',
+      }
+
+      const matcher = generateMatcher({
+        $string: 'stringProp',
+      })
+
+      expect(obj).toMatchSnapshot(matcher)
+    })
+
+    test('multiple random properties only', () => {
+      const obj = {
+        stringProp: chance.word(),
+        string_prop: chance.word(),
+      }
+
+      const matcher = generateMatcher({
+        $string: ['stringProp', 'string_prop'],
+      })
+
+      expect(obj).toMatchSnapshot(matcher)
+    })
+
+    test('multiple random properties and some other constant props', () => {
+      const obj = {
+        stringProp: chance.word(),
+        string_prop: chance.word(),
+        num: 10,
+        str: 'test string',
+      }
+
+      const matcher = generateMatcher({
+        $string: ['stringProp', 'string_prop'],
+      })
+
+      expect(obj).toMatchSnapshot(matcher)
+    })
+  })
+
   describe('more complex scenarios', () => {
 
     test('combination of all supported props', () => {

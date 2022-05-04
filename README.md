@@ -70,6 +70,7 @@ These are the currently supported keys:
 - `$date` - matches js Date (same as $dateTime)
 - `$stringDateTime` - matches ISO 8601 string representation of a dateTime (such as "2019-12-08T12:24:22.591Z") 
 - `$stringDate` - matches date in a "YYYY-MM-DD" format
+- `$string` - any string
 
 Any other properties passed inside `matchersDefs` argument will be propagated intact to
 the returned matcher so you can pass any additional matchers that are not supported by

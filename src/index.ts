@@ -1,7 +1,7 @@
 const dateTimeRegex = /^\d{4}-[01]\d-[0-3]\dT[0-2]\d:[0-5]\d:[0-5]\d\.\d+([+-][0-2]\d:[0-5]\d|Z)$/u
 const dateRegex = /^\d{4}-[01]\d-[0-3]\d$/u
 
-type SpecialProp = '$number'|'$numericString'|'$dateTime'|'$stringDateTime'|'$date'|'$stringDate'
+type SpecialProp = '$number'|'$numericString'|'$dateTime'|'$stringDateTime'|'$date'|'$stringDate'|'$string'
 
 const getMatcherBySpecialProp = (key: SpecialProp) => {
   switch (key) {
@@ -17,6 +17,8 @@ const getMatcherBySpecialProp = (key: SpecialProp) => {
       return expect.any(Date)
     case '$stringDate':
       return expect.stringMatching(dateRegex)
+    case '$string':
+      return expect.any(String)
   }
 }
 
@@ -37,6 +39,7 @@ export default function generateMatcher(obj: { [key: string]: any }) {
     '$stringDateTime',
     '$date',
     '$stringDate',
+    '$string',
   ]
 
   const keys = Object.keys(obj)

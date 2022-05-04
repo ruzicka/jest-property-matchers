@@ -176,6 +176,50 @@ Object {
 }
 `;
 
+exports[`matchers $string multiple random properties and some other constant props 1`] = `
+Object {
+  "num": 10,
+  "str": "test string",
+  "stringProp": Any<String>,
+  "string_prop": Any<String>,
+}
+`;
+
+exports[`matchers $string multiple random properties only 1`] = `
+Object {
+  "stringProp": Any<String>,
+  "string_prop": Any<String>,
+}
+`;
+
+exports[`matchers $string single random property (defined in array) and some other constant props 1`] = `
+Object {
+  "num": 10,
+  "str": "test string",
+  "stringProp": Any<String>,
+}
+`;
+
+exports[`matchers $string single random property (defined in array) only 1`] = `
+Object {
+  "stringProp": Any<String>,
+}
+`;
+
+exports[`matchers $string single random property and some other constant props 1`] = `
+Object {
+  "num": 10,
+  "str": "test string",
+  "stringProp": Any<String>,
+}
+`;
+
+exports[`matchers $string single random property only 1`] = `
+Object {
+  "stringProp": Any<String>,
+}
+`;
+
 exports[`matchers $stringDate multiple random properties and some other constant props 1`] = `
 Object {
   "createdAt": StringMatching /\\^\\\\d\\{4\\}-\\[01\\]\\\\d-\\[0-3\\]\\\\d\\$/u,
